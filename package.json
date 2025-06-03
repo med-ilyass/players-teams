@@ -1,0 +1,22 @@
+{
+  "name": "players-teams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:reset": "psql -U ilyassoudli -d dmv -f db/schema.sql && psql -U ilyassoudli -d dmv -f db/seed.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "init": "^0.1.2",
+    "pg": "^8.16.0"
+  }
+}
