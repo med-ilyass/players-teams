@@ -16,3 +16,5 @@ INSERT INTO players (name, position, number, age, team_id) VALUES
 ('Thibaut Courtois', 'Goalkeeper', 1, 31, 2),
 ('Achraf Hakimi', 'Defender', 2, 25, 3),
 ('Vinicius Jr.', 'Winger', 20, 23, 1);
+
+

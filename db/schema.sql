@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS players;
-
+DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS teams;
 
 CREATE TABLE teams(
@@ -17,4 +17,10 @@ CREATE TABLE players(
     number INT NOT NULL,
     age INT CHECK (age >= 15),
     team_id INT REFERENCES teams(id) ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  password TEXT NOT NULL
 );
